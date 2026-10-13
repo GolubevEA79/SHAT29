@@ -2,3 +2,5 @@ a=int(input("Введите первое число:"))
 b=int(input("Введите знак:"))
 a=int(input("Введите второе число:"))
 print (a)
+print (b)
+
