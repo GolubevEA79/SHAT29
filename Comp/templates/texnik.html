@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <nav>
+    <a href="/">Home</a>
+    <a href="/clients">Клиенты</a>
+    <a href="/components">Компоненты</a>
+    <a href="/texnika">Техники</a>
+    <a href="/units">Запчасти</a>
+    <a href="/users">Работники</a>
+    </nav>
+    <div>
+    {% for texnik in texnika %}
+        <div>
+            <h2>{{texnik}}</h2>
+        </div>
+    {%endfor%}
+    </div>
+</body>
+</html>
